@@ -1,0 +1,236 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Abhishek}{Chauhan}{ 
+\href{mailto:abhishekchauhan539@gmail.com}{abhishekchauhan539@gmail.com} | 9870172760  
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.32\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\subsection{Netaji Subhas University                                                      of Technology}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\location{BE in Mechanical engineering}
+\location{ Cum. GPA: 8.0 / 10} 
+\sectionsep
+
+\subsection{Kendriya Vidyalaya}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\descript{Class 12th - 87.8 }
+\descript{Class 10th - 10 cgpa }
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Github:// \href{https://github.com/chauhan539}{\bf chauhan539} \\
+LinkedIn://  \href{https://www.linkedin.com/in/abhishek-chauhan-4a940a17b/}{\bf Abhishekchauhan} \\
+Codechef://  \href{https://www.codechef.com/users/abhichauhxn}{\bf abhichauhxn} \\
+Spoj://  \href{https://www.codechef.com/users/abhichauhxn}{\bf abhishek_251} \\
+Codeforces://  \href{https://codeforces.com/profile/abhishekchauhan539}{\bf abhishekchauhan539} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{}
+ • Neural networks and deep learning. \\
+  • Numerical Methods \\
+• Artificial Intelligence.\\
+• The complete 2019 web    development. \\
+• Python for Data Science and     Machine learning. \\
+
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\sectionsep
+\subsection{Programming}
+\location{languages}
+C/C++ \textbullet{}   Java \textbullet{} Python \textbullet{} Javascript \\
+\sectionsep
+\location{Web develepment}
+HTML \textbullet{} CSS \textbullet{} Django \textbullet{} SQlite3\textbullet{} Git \\
+\sectionsep
+\location{Machine learning}
+  KNN \textbullet{} logistic regression \textbullet{} Linear regression \textbullet{} SVM \textbullet{}Recommender systems \textbullet{} NLP 
+ \textbullet{} Neural networks \\
+ \sectionsep
+ \location{Tools and libraries}
+  NumPy \textbullet{} Pandas \textbullet{} Matplotlib\textbullet{} seaborn \textbullet{} SciKit learn 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.65\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{PROJECTS}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\runsubsection{Breast cancer detection }
+\location{March-2020 }
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Made a simple \textbf{ Machine learning } model on classification technique to determine whether a human cell is Benign or Malignant. Used \textbf{Support Vector Machine (SVM) } to determine the class label for an unlabeled test case.   
+
+\end{tightemize}
+\sectionsep
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\runsubsection{MyCART(shopping website)}
+\location{Dec-2019}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item MyCART website is built using  \textbf{Django  } framework. \textbf{HTML, CSS }and \textbf{JavaScript } were used for frontend. Python is used for backend with sqlite3 for database. Basic functions like an item scrolling, addition to card, checkout with address entry in database can be done. 
+
+\end{tightemize}
+\sectionsep
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\runsubsection{Tic-Tac-Toe game with AI}
+\location{Sept 2019}
+\begin{tightemize}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\item   A game in which the player who places three marks in a straight line wins. I used \textbf{MiniMax  } algorithm of Artificial intelligence to predict the moves of the computer.\\
+\item Implemented the \textbf{ MiniMax} algorithm using concept of Depth first search on a 2-D matrix.\\
+\end{tightemize}
+\sectionsep
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\runsubsection{Flappy bird}
+\location{Sept 2019}
+\begin{tightemize}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\item  A classical 2-D game built with \textbf{Javascript  } and \textbf{ Html}\\
+
+\end{tightemize}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{ACHIEVEMENTS}
+\sectionsep 
+\begin{itemize}
+\item Global rank \textbf{232  }  out of 25000 participants in codechef april challenge 2020.
+\item Solved over 250 problems in various platforms like spoj,codechef and codeforces.
+\item Codechef rating \textbf{1863(4 stars).  }
+\item Rank \textbf{251/50000 } in GGSIPU CET-2017.
+\item School topper in computer science -96/100.
+\item School topper CBSE 10th boards -\textbf{ 10 cgpa.  }
+\end{itemize}
+
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{POSITION OF RESPOSIBILITY}
+\item IT/content Head - \textbf{BULLETHAWK} racing (formula SAE society of NSUT)
+\end{minipage} 
+\end{document}  \documentclass[]{article}
